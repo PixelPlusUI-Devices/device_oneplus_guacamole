@@ -817,4 +817,7 @@
 
     <!-- Whether Device Support UDFPS or Not -->
     <bool name="config_supportUdfps">true</bool>
+
+    <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
+    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
 </resources>

@@ -471,8 +471,12 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     als_correction_service.oneplus7pro \
     android.hardware.sensors@2.1-service.oneplus7pro \
-    libsensorndkbridge
+    libsensorndkbridge \
+    sensors.udfps
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+    
 # Servicetracker
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.0.vendor \
