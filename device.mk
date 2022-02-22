@@ -33,9 +33,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list
 
-# FOD
-EXTRA_FOD_ANIMATIONS := true
-
 # Recovery Override
 PRODUCT_PROPERTY_OVERRIDES += persist.vendor.recovery_update=false
 
