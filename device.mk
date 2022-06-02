@@ -40,6 +40,10 @@ PRODUCT_PROPERTY_OVERRIDES += persist.vendor.recovery_update=false
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+#RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Wifi Overlay
 PRODUCT_PACKAGES += \
     OnePlus7ProWifiOverlay
