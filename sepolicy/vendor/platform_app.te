@@ -10,5 +10,8 @@ allow platform_app vendor_xdsp_device:chr_file r_file_perms;
 
 rw_dir_file(platform_app, vendor_sysfs_battery_supply)
 
+hal_client_domain(platform_app, vendor_hal_dms)
+
 binder_call(platform_app, hal_camera_default)
 binder_call(platform_app, vendor_hal_cameraMDM_default)
+binder_call(platform_app, vendor_hal_dms_default)

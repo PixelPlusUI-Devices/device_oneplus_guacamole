@@ -1,1 +1,4 @@
 allow hal_audio_default ultrasound_device:chr_file rw_file_perms;
+
+hal_client_domain(hal_audio_default, vendor_hal_dms)
+binder_call(hal_audio_default, vendor_hal_dms_default)
