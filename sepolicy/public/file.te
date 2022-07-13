@@ -1,2 +1,5 @@
+# Engineering
+type vendor_persist_engineer_file, file_type;
+
 # Motor
 type sysfs_motor, sysfs_type, fs_type;
