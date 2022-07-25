@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from qssi-user-11-RKQ1.201022.002-2204061044-release-keys
+# All unpinned blobs below are extracted from OnePlus 7 Pro Global and India (11.0.9.1.GM21AA)
 
 # ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
