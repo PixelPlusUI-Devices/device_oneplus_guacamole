@@ -75,9 +75,6 @@ function blob_fixup() {
         vendor/etc/libnfc-nxp.conf)
             sed -i "/NXP_NFC_DEV_NODE/ s/pn553/nq-nci/" "${2}"
             ;;
-        vendor/lib64/hw/com.qti.chi.override.so)
-            grep -q libcamera_metadata_shim.so "${2}" || "${PATCHELF}" --add-needed libcamera_metadata_shim.so "${2}"
-            ;;
     esac
 }
 

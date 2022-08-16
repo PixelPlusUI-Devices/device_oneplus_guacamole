@@ -5,6 +5,9 @@ app_domain(camera_helper_app)
 allow camera_helper_app app_api_service:service_manager find;
 allow camera_helper_app cameraserver_service:service_manager find;
 
+allow camera_helper_app system_data_file:dir search;
+allow camera_helper_app user_profile_root_file:dir search;
+
 allow camera_helper_app mnt_vendor_file:dir search;
 
 r_dir_file(camera_helper_app, vendor_persist_engineer_file)
