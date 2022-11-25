@@ -53,25 +53,6 @@ void property_override_dual(char const system_prop[], char const vendor_prop[], 
     property_override(vendor_prop, value);
 }
 
-void load_dalvikvm_properties() {
-  struct sysinfo sys;
-  sysinfo(&sys);
-  if (sys.totalram > 8192ull * 1024 * 1024) {
-    // from - phone-xhdpi-12288-dalvik-heap.mk
-    property_override("dalvik.vm.heapstartsize", "24m");
-    property_override("dalvik.vm.heapgrowthlimit", "384m");
-    property_override("dalvik.vm.heaptargetutilization", "0.42");
-    property_override("dalvik.vm.heapmaxfree", "56m");
-    }
-  else if(sys.totalram > 6144ull * 1024 * 1024) {
-    // from - phone-xhdpi-8192-dalvik-heap.mk
-    property_override("dalvik.vm.heapstartsize", "24m");
-    property_override("dalvik.vm.heapgrowthlimit", "256m");
-    property_override("dalvik.vm.heaptargetutilization", "0.46");
-    property_override("dalvik.vm.heapmaxfree", "48m");
-  }
-}
-
 void vendor_load_properties() {
   int prj_version = stoi(android::base::GetProperty("ro.boot.prj_version", ""));
   int project_name = stoi(android::base::GetProperty("ro.boot.project_name", ""));
@@ -188,6 +169,4 @@ void vendor_load_properties() {
     property_override_dual("ro.odm.build.type", "ro.product.build.type", "user");
     property_override_dual("ro.system.build.type", "ro.system_ext.build.type", "user");
 
-  // dalvikvm props
-  load_dalvikvm_properties();
 }
