@@ -23,6 +23,7 @@ object Utils {
     private const val DOZE_INTENT = "com.android.systemui.doze.pulse"
 
     const val ALWAYS_ON_DISPLAY = "always_on_display"
+    const val DOZE_ON_CHARGE = "doze_on_charge"
     const val DOZE_ENABLE = "doze_enable"
 
     const val CATEGORY_PICKUP_SENSOR = "pickup_sensor"
