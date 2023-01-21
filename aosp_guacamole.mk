@@ -49,10 +49,15 @@ TARGET_SCREEN_WIDTH := 1440
 TARGET_BOOT_ANIMATION_RES := 1440
 
 # Build info
-BUILD_FINGERPRINT := OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202210120815:user/release-keys
+BUILD_FINGERPRINT := "google/cheetah/cheetah:13/TQ1A.230105.002.A1/9409646:user/release-keys"
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="OnePlus7Pro-user 12 SKQ1.211113.001 P.202210120815 release-keys" \
+    PRIVATE_BUILD_DESC="cheetah-user 13 TQ1A.230105.002.A1 9409646 release-keys"\
     PRODUCT_DEVICE=OnePlus7Pro \
     PRODUCT_NAME=guacamole
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# Pixel Features 2022
+PRODUCT_PACKAGES += \
+    pixel_experience_2022
