@@ -764,4 +764,7 @@
     <!-- Set to true to offset the wallpaper when using multiple displays so that it's centered
          at the same position as in the largest display.-->
     <bool name="config_offsetWallpaperToCenterOfLargestDisplay">true</bool>
+
+    <!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">true</bool>
 </resources>
