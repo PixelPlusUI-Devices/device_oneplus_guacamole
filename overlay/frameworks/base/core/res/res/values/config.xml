@@ -432,6 +432,8 @@
         <item>"/system/bin/surfaceflinger"</item>
         <item>/system/framework/framework.jar</item>
         <item>/system/framework/services.jar</item>
+        <item>/system/framework/QPerformance.jar</item>
+        <item>/system/framework/UxPerformance.jar</item>
         <item>/system/lib64/libsurfaceflinger.so</item>
         <item>"/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
         <item>"/system_ext/priv-app/MotoDolbyDax3/MotoDolbyDax3.apk"</item>
