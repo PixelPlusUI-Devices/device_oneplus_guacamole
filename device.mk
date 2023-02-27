@@ -165,6 +165,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0.vendor
 
+# Av
+$(call inherit-product, $(LOCAL_PATH)/qti/av/qti-av.mk)
+
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl:64 \

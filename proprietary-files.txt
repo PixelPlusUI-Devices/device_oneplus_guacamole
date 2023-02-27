@@ -79,6 +79,16 @@ vendor/lib64/hw/audio.primary.msmnile.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libbatterylistener.so
 
+# Av (system)
+system_ext/lib/extractors/libmmparserextractor.so|7ede7312401095c0d3055da918a2bfc76ab51072
+system_ext/lib/libavenhancements.so|21d7584c5d1c6912293fa92ec2f96085fb069763
+system_ext/lib/libmmosal.so|47f1f3b51063aa10e1175333dc32522637289dc7
+system_ext/lib/libmmparser_lite.so|f63d4f3e66ee2e87a94646f6e49c80f9308c7c37
+system_ext/lib64/extractors/libmmparserextractor.so|7c158f1425d008f8e956138f62b03c7d4a32730b
+system_ext/lib64/libavenhancements.so|30cb9c5b952b374f5f93213151f025744d600156
+system_ext/lib64/libmmosal.so|d46f10b470ecd829c6f2a424566f1cbbc6ebe234
+system_ext/lib64/libmmparser_lite.so|be18953c8c05af2af44bf7feccf2de4fdedaa3a3
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -782,12 +792,12 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Media
+odm/etc/media_profiles_V1_0.xml|981dd4a7ffb9020aa1142930ff3ae6d07bda12aa
 vendor/bin/hw/vendor.qti.media.c2@1.0-service|c170ebc5a0416f609186639125132b87a5650ef8
 vendor/bin/mm-vidc-omx-test|98bc13ff787039cbb8ded45fe80ba98c3fa6b369
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
 vendor/etc/media_codecs_c2.xml|490211cad553ce69d536c0e55848b6a7d499260d
 vendor/etc/media_codecs_performance_c2.xml|e16b7768c91f1e15ca3ddc146a77645605a1d090
-odm/etc/media_profiles_V1_0.xml|981dd4a7ffb9020aa1142930ff3ae6d07bda12aa
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy|3c396a276dfb589501105e7158459fa2d644607e
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy|a134d3d5d74294ca8164056b42389b1c7dbb2b65
 -vendor/etc/vintf/manifest/c2_manifest_vendor.xml|0e532bf1c7d6a0ee2e7e03a9cc3283a5bffc7f8e
@@ -1493,7 +1503,6 @@ system_ext/lib/libwfduibcsinkinterface.so|5aa2ec3238a1c982fb9c40cd4443dd86343345
 system_ext/lib/libwfduibcsrc.so|b269c1b9ef1636875b8a16f0bafdb69f38c039aa
 system_ext/lib/libwfduibcsrcinterface.so|a26c4ce864a63f9875f620b969146da412e8dee2
 system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|db7b55eb78b6f90ac50e39435fa75b878c21ffea
-system_ext/lib64/libmmparser_lite.so|e1a76ee05ddc62ddfd554aac680fdb94f26994dd
 system_ext/lib64/libmmrtpdecoder.so|5affca38a9361d131a86af63c842807097f9a292
 system_ext/lib64/libmmrtpencoder.so|ed98e847430e34aaf2d31ed9cef1275acad405fd
 system_ext/lib64/libwfdclient.so|6d4f7be9b83031ae4a33675e9f9fd04e99c6d44c
