@@ -758,4 +758,11 @@
 
     <!-- Whether to force enable multi resolution configuration for camera -->
     <bool name="config_forceMultiResolution">true</bool>
+
+    <!-- The max scale for the wallpaper when it's zoomed in -->
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">1</item>
+
+    <!-- Set to true to offset the wallpaper when using multiple displays so that it's centered
+         at the same position as in the largest display.-->
+    <bool name="config_offsetWallpaperToCenterOfLargestDisplay">true</bool>
 </resources>
