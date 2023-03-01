@@ -337,6 +337,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
+# IRQ
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
 # Ih8sn
 PRODUCT_PACKAGES += \
     ih8sn
@@ -384,8 +388,12 @@ PRODUCT_PACKAGES += \
     OnePlusCameraOverlay \
     OnePlusGalleryOverlay
 
-# Perf
-$(call inherit-product, $(LOCAL_PATH)/qti/perf/qti-perf-legacy.mk)
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power.stats@1.0-service.mock \
+    android.hardware.power-service-qti \
+    vendor.qti.hardware.perf@2.2.vendor
 
 # QMI
 PRODUCT_PACKAGES += \
