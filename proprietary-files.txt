@@ -816,6 +816,7 @@ vendor/lib/libqcodec2_utils.so|bd4026b1e20890c7e168dbe205f34691fe88b588
 vendor/lib/libqcodec2_v4l2codec.so|ad8b3a35fa377fc903a4382c47f18fe6383d7d2c
 vendor/lib/libstreamparser.so|935aabbbde4806bad2e09453c73004238d69db6f
 vendor/lib/libswvdec.so|7d269da9b5b9b2f5e4ee3ce3b68e3725ce012ef0
+vendor/lib/libqc2vppfilter.so|f16a74b7a33275f213eded5ab027dc3b973e7a60
 vendor/lib/libvideooptfeature.so|5fb8589deda269bd36c18f04ce84b3f317b5fd96
 vendor/lib/libvideoutils.so|8386c94816eb456f8eb78c2203da3aedd35226d1
 -vendor/lib64/libMpeg4SwEncoder.so|40d8eed5d93872d4f453c0bdd562ada091046a04
@@ -828,6 +829,7 @@ vendor/lib64/libqcodec2_platform.so|02fe8f655030343a67ecb2d6ba67809736aa65f0
 vendor/lib64/libqcodec2_utils.so|8399f0dcdf242cab29eb44154859417d93b77d78
 vendor/lib64/libqcodec2_v4l2codec.so|d3aa201c20dac6971b2fa331f7ba577e49c75eac
 vendor/lib64/libswvdec.so|e50cc714152873d4fdcabd3ed1bbf9e635725b78
+vendor/lib64/libqc2vppfilter.so|62086788eb4ea42ae852d8bee1d045e5c2fbd3ff
 vendor/lib64/libvideooptfeature.so|2f302583ff4ab892b04a649d1b3080019b588d49
 
 # Neural networks - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
