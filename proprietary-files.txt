@@ -933,9 +933,6 @@ vendor/lib/libqti-utils.so|3016ae3374b4de3240190d9f885c42cc3ce4d11d
 vendor/lib/libskewknob.so|e2e7b175d635f025a941385f9ec3752a9f83cbb4
 vendor/lib/vendor.qti.hardware.iop@1.0.so|f8f75972e1ce19685a6c42bf11d8612a84b1dd57
 vendor/lib/vendor.qti.hardware.iop@2.0.so|6f24e40d9d1fdc045a40906d2c03e109bfc5eb63
-vendor/lib/vendor.qti.hardware.perf@2.0.so|a37ba8b9963b8eb748309cc4f378b592028677e5
-vendor/lib/vendor.qti.hardware.perf@2.1.so|d6bcc402ca0e9d075dfc59fb5b5aecb8b5961431
-vendor/lib/vendor.qti.hardware.perf@2.2.so|70c192a887c68e63f2ce0f254dd58b422ce6e93f
 vendor/lib/vendor.qti.memory.pasrmanager@1.0.so|f4eeb7f6501b9eb81de8a8859a8e2debf9ac1744
 vendor/lib/vendor.qti.memory.pasrmanager@1.1.so|9349a527a8d50cc18d2ca03b92f82640641ec3bb
 vendor/lib/vendor.qti.power.pasrmanager@1.0.so|ce3f6e7651fe832e9b0278f6a3372e0857c5fdbb
@@ -970,9 +967,6 @@ vendor/lib64/libskewknob.so|f25b655771a47cc11466e7ab9437fc0b3753a558
 vendor/lib64/libsplh.so|9ee7189cba3a0e0e7cf5ade24cad6c45e83cbaef
 vendor/lib64/vendor.qti.hardware.iop@1.0.so|4d62e0d7d575dba2bd90caf27d8e54bfec042fd5
 vendor/lib64/vendor.qti.hardware.iop@2.0.so|81564be065d66ec65b0bfc523102ae63b2f7249f
-vendor/lib64/vendor.qti.hardware.perf@2.0.so|9633d7188e3179017fdbc60e09b654d39822c1ad
-vendor/lib64/vendor.qti.hardware.perf@2.1.so|10cd89e4fb77fcb82b2019303c3b97fb7e09e29c
-vendor/lib64/vendor.qti.hardware.perf@2.2.so|86c815d8713e6e411ae22e7fba451a292345d6b1
 vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|fc3c761b2654b83a4216eadf8dc8698540b2de1f
 vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|db794e0ba79fd310a8427cbcae03be05008c429f
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|6b5a8ca7b57e6515882dab290028c766b7bbaa41

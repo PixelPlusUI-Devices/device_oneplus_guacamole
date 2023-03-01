@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
     
 # Packages
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.2.vendor
     android.hardware.power.stats@1.0-service.mock \
     android.hardware.thermal@2.0.vendor \
     init.aospa.perf.rc \
