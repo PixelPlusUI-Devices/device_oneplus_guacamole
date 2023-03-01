@@ -63,7 +63,11 @@ on init
     chown system system /dev/stune/camera-daemon
     chown system system /dev/stune/camera-daemon/tasks
     chmod 0664 /dev/stune/camera-daemon/tasks
-    
+
+    # Tri-state-key
+    chmod 0666 /sys/devices/platform/soc/soc:tri_state_key/tri_state
+    chown system system /sys/devices/platform/soc/soc:tri_state_key/tri_state
+        
 on early-fs
     start vold
 
