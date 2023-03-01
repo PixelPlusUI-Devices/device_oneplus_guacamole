@@ -68,6 +68,7 @@ vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libbatterylistener.so
 vendor/lib/libopf.so
+vendor/lib/libqtigef.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libhaptic_effect.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -78,6 +79,7 @@ vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib64/hw/audio.primary.msmnile.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libbatterylistener.so
+vendor/lib64/libqtigef.so
 
 # Av (system)
 system_ext/lib/extractors/libmmparserextractor.so|7ede7312401095c0d3055da918a2bfc76ab51072
