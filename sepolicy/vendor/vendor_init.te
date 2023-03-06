@@ -26,3 +26,6 @@ get_prop(vendor_init, vendor_tee_listener_prop)
 
 # Allow vendor_init to set attribute of block_device
 allow vendor_init block_device:lnk_file setattr;
+
+allow vendor_init proc_dirty:file { write };
+allow vendor_init cgroup:file { getattr };

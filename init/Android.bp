@@ -119,7 +119,14 @@ prebuilt_etc {
     name: "init.opcamera.rc",
     src: "init.opcamera.rc",
     sub_dir: "init",
-    vendor: true,
+    device_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.oplus.perf.rc",
+    src: "init.oplus.perf.rc",
+    sub_dir: "init",
+    device_specific: true,
 }
 
 prebuilt_etc {

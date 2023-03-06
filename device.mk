@@ -326,10 +326,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
-# IRQ
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
-
 # Ih8sn
 PRODUCT_PACKAGES += \
     ih8sn
@@ -411,11 +407,22 @@ PRODUCT_PACKAGES += \
     OnePlusCameraOverlay \
     OnePlusGalleryOverlay
 
+# Perf
+PRODUCT_PACKAGES += \
+    libpsi.vendor \
+    libtflite \
+    libstdc++.vendor \
+    libvndfwk_detect_jni.qti.vendor
+
+# Perf Jars
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor \
     android.hardware.power-service-qti \
-    vendor.qti.hardware.perf@2.2.vendor
+    android.hardware.power@1.2.vendor
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -465,7 +472,8 @@ PRODUCT_PACKAGES += \
 
 # Servicetracker
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.servicetracker@1.0.vendor
+    vendor.qti.hardware.servicetracker@1.0.vendor \
+    vendor.qti.hardware.servicetracker@1.2.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -474,6 +482,11 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # SoC
 PROCESSOR_MODEL := SM8150
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0 \
+    android.hardware.thermal@2.0.vendor
 
 # Telephony
 PRODUCT_PACKAGES += \
