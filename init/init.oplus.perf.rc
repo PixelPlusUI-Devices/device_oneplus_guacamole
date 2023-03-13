@@ -123,3 +123,12 @@ on property:vendor.post_boot.parsed=1
 
     # Enable suspend to RAM
     write /sys/power/mem_sleep "deep"
+
+    # Setup scheduler parameters
+    write /proc/sys/kernel/sched_child_runs_first 1
+    write /proc/sys/kernel/sched_conservative_pl 1
+    write /proc/sys/kernel/sched_tunable_scaling 1
+
+on property:persist.sys.device_provisioned=1
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,7
+    setprop dalvik.vm.dex2oat-threads 6
