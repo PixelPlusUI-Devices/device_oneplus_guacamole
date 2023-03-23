@@ -17,6 +17,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # OnePlus apps
 $(call inherit-product-if-exists, vendor/oneplus/apps/apps-vendor.mk)
 
+# Call oneplus firmware
+$(call inherit-product, vendor/oneplus/firmware-guacamole/Android.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_guacamole
 PRODUCT_DEVICE := guacamole
