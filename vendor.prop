@@ -105,6 +105,7 @@ persist.vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
+bluetooth.device.default_name=OnePlus 7 Pro
 
 # Camera
 vendor.camera.algo.jpeghwencode=0

@@ -19,6 +19,10 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
+# AAPT
+PRODUCT_AAPT_CONFIG := xxxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+
 # Alert slider
 PRODUCT_PACKAGES += \
     tri-state-key-calibrate
@@ -58,6 +62,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_ODM)/etc/audio_io_policy.conf \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml \
+    $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_platform_info.xml \
+    $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/mixer_paths.xml \
+    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_platform_info.xml
 
 PRODUCT_COPY_FILES += \
@@ -102,7 +109,8 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libxml2 \
     vendor.oplus.hardware.cameraMDM@2.0.vendor:64 \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    vendor.qti.hardware.camera.device@1.0.vendor \
+    OnePlusCameraHelper
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -218,6 +226,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fstab.qcom \
     init.class_main.sh \
     init.oplus.rc \
     init.oplus.sh \
@@ -307,6 +316,8 @@ PRODUCT_PACKAGES += \
     OnePlusCameraResCommon \
     OPlusFrameworksResCommon \
     OPlusSystemUIResCommon \
+    OPlusSettingsProviderResTarget \
+    OPlusSettingsResTarget \
     OPlusWifiResCommon \
     SystemUIResCommon \
     TelephonyResCommon
@@ -364,6 +375,9 @@ PRODUCT_COPY_FILES += \
 # Servicetracker
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.0.vendor
+
+# Shipping API
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -461,4 +475,4 @@ PRODUCT_BOOT_JARS += \
 $(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/sm8150-common/sm8150-common-vendor.mk)
+$(call inherit-product, vendor/oneplus/guacamole/guacamole-vendor.mk)
