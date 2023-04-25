@@ -386,15 +386,15 @@ vendor/etc/Oppo_QC_LTM_Commercial_SM8250_2020_01_15.pfm
 vendor/lib64/libhdr_tm.so
 
 # Display (SDM) - from NX627J - RKQ1.200826.002
-vendor/lib64/libdisplayqos.so|3e95c6aedbfca5132ef75365e0a45a32c79b1fd6
-vendor/lib64/libqseed3.so|a449d79b912415f542509874b43338b27795a1c3
-vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
-vendor/lib64/libsdm-color.so|b2bcf2c205b501024407ed5c216d2b290688bd64
-vendor/lib64/libsdm-colormgr-algo.so|6d17546d7822803700dc21968f75069d1b7392b1
-vendor/lib64/libsdm-diag.so|3d5c311d7d5d842e5a75e9ae3f9f70ceb00cd1cf
-vendor/lib64/libsdm-disp-vndapis.so|42f536763a2f91dcbae5b4b7214e652283c389d6
-vendor/lib64/libsdmextension.so|0aed8ab6ecf878ae57ecba4b8a9bfb0d184ab5f7
-vendor/lib64/libtinyxml2_1.so|621dbc8e3d0529b9ee35393698de82ea006ca7fa
+vendor/lib64/libdisplayqos.so|5548732c916e629f18f45ce257ce843b679a136a
+vendor/lib64/libqseed3.so|7f2a659fb9acd84d79c11dbd6901b816d5d1214f
+vendor/lib64/libsdedrm.so|5cf6147a8b33bb9ae4b99e6ba923d0be32295768
+vendor/lib64/libsdm-color.so|d0984c33dcbf84940676917e0c3584b0ccfeaf03
+vendor/lib64/libsdm-colormgr-algo.so|15f696a4575868e528360896f1e0098d531899c0
+vendor/lib64/libsdm-diag.so|341907510d377127adb98d07e7d9f30448d08def
+vendor/lib64/libsdm-disp-vndapis.so|60da199073d2b0881bf075190a644b332503f39c
+vendor/lib64/libsdmextension.so|e10d29f29b7a53b75369e58e8a165b2b86609f26
+vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 
 # Display calibration data
 vendor/etc/ltm_config_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml
@@ -477,18 +477,18 @@ system_ext/etc/permissions/privapp-com.dolby.daxservice.xml|e61ed4d4cbdf54dee613
 system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|43c610f41061f49959ce07b26c60427b8767e535
 system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|7690774632fe32269657fc1a2a0c941c7cd83f3d
 system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|f647356bd3a4bb4174e873e4544c2921d51fd4d2
-system_ext/priv-app/DaxUI/DaxUI.apk;OVERRIDES=AudioFX,MusicFX,SoundAmplifierPrebuilt|fdf7b8923550006d5ea8456fe790949c707f65eb
+system_ext/priv-app/DaxUI/DaxUI.apk;OVERRIDES=AudioFX,MusicFX,SoundAmplifierPrebuilt|6f3bc144613dd26d94c13bf6fce1746619d3daa9
 
 # Dolby (system) - from OnePlus 9R LE2101 11.2.8.8
 system/lib64/vendor.dolby.hardware.dms@2.0.so|0a1cb972160890b07baf3a3e624e9ec1273befed
-system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
+system_ext/priv-app/daxService/daxService.apk|ec7da3a4b973c070a37d58b840e21983b0cf9933
 
 # Dolby (vendor) - from OnePlus 9R LE2101 11.2.8.8
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|84247a3563b362e97dacaa79d4845c1292a92f13
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
 vendor/lib/libdapparamstorage.so|6c488c6bc88abe13c6fd689124475526c1cf41b8
 vendor/lib/libdeccfg.so|28b3aa2368d091b50ef7d5f3c3d44466a89172f8
-vendor/lib/libqtigef.so|c7d588a80c3aac52b160db6ded1528bb8b8fd7bd
+vendor/lib/libqtigef.so|44a4df38dd3c9cecdd071270cb2ec6555bdca461
 vendor/lib/libstagefright_soft_ddpdec.so|c1a83910911cdab332088b10b2d3675b735a9524
 vendor/lib/libstagefrightdolby.so|c4269437c623630cf9c79c2010a7cfb88828584a
 vendor/lib/soundfx/libeffectproxy.so|44289fe864b085d53c051ad42ed233727ced175c
@@ -688,8 +688,8 @@ my_product/priv-app/HotwordEnrollmentOKGoogleWCD9340.apk:product/priv-app/Hotwor
 my_product/priv-app/HotwordEnrollmentXGoogleWCD9340.apk:product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
 
 # IMS - from renoir - 22.5.11
-system_ext/app/ImsRcsService/ImsRcsService.apk|d03d3142f3518e755d02ace26b17170218ed8b4b
-system_ext/app/QtiTelephony/QtiTelephony.apk|f2ea59dfc69126c83905979e2d55d7c5f02e15e1
+system_ext/app/ImsRcsService/ImsRcsService.apk|3ad9a2315d0120a9c3de97e82b51f6f90771dee9
+system_ext/app/QtiTelephony/QtiTelephony.apk|b14184ae921a6d07eedf03830a34760d04662c62
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|54487895eb4c26e6ec642538dba910de9b092c81
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml|83fb6029772c3a425dbd5cd45a61ca9d427e7604
@@ -703,7 +703,7 @@ system_ext/lib64/libdiag_system.so|35bace09ba74af348b9530fb02cf7088c90a44fd
 system_ext/lib64/libimscamera_jni.so|ff3d65093f5bf19fba95798b0a121ee510b0f72e
 system_ext/lib64/libimsmedia_jni.so|9f192af40439abb04d5d5f0f3de5b772c9381114
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|0c11ff5a7a671073ee40e17d46aa8b7acbf1dc0a
-system_ext/priv-app/ims/ims.apk|f0d834acbc77e7830459e0246f5073e1b9ba8657
+system_ext/priv-app/ims/ims.apk|2d94a2cfebaaacd1a33caad655f4e1b640208203
 
 # IMS
 vendor/bin/ims_rtp_daemon
@@ -1734,7 +1734,7 @@ system_ext/lib64/libwfduibcsink.so|d4cc3afb86003f0e26134f82b503b6deac30b6b5
 system_ext/lib64/libwfduibcsinkinterface.so|a875792e5242870cd9a069cb367a6b5031fce2f0
 system_ext/lib64/libwfduibcsrc.so|1529ca18c3484b8a3f3d95e9198def564e86fda3
 system_ext/lib64/libwfduibcsrcinterface.so|69400030817aa8f6994a525b027bb3dd7cabd0d4
-system_ext/priv-app/WfdService/WfdService.apk|33eb0fd6703303f2ff20e39898e278a4358c820b
+system_ext/priv-app/WfdService/WfdService.apk|556c225c72b346319b0c0615e3ed43e1fcf1384d
 
 # WiFi Display (vendor)
 vendor/bin/wfdhdcphalservice
