@@ -11,14 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from guacamole device
 $(call inherit-product, device/oneplus/guacamole/device.mk)
 
-# Inherit some common Evolution stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common PixelPlusUI stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # OnePlus Apps
 $(call inherit-product, vendor/oneplus/apps/apps-vendor.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_guacamole
+PRODUCT_NAME := aosp_guacamole
 PRODUCT_DEVICE := guacamole
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := GM1913
@@ -34,16 +34,14 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1440
 
-# Custom stuff.
-TARGET_BUILD_APERTURE_CAMERA := false
-TARGET_USE_PIXEL_FINGERPRINT := true
-TARGET_USES_PICO_GAPPS := true
-TARGET_INCLUDE_PIXEL_CHARGER := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_ENABLE_BLUR := false
-EXTRA_UDFPS_ANIMATIONS := true
-EVO_BUILD_TYPE := SPECIAL
-TARGET_SHIPS_FIRMWARE := false
+#PixelPlus-UI Official Stuff
+CUSTOM_BUILD_TYPE := OFFICIAL
+IS_PHONE := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+PPUI_MAINTAINER := Master
 
 # Gapps Build Details
 TARGET_GAPPS_ARCH := arm64
